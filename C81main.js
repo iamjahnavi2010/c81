@@ -1,30 +1,39 @@
-canvas=document.getElementById("Mycanvas");
-ctx= canvas.getContext("2d");
-color ="red";
+
+
+canvas=document.getElementById("canvas1");
+ctx=canvas.getContext("2d");
+color= "blue";
+ctx.beginPath();
+ctx.strokeStyle=color;https://codepen.io/login
+ctx.lineWidth=10;
+ctx.arc(100, 200, 80 ,0 , 2*Math.PI); 
+ctx.stroke(); 
+
+
+color= "black";
 ctx.beginPath();
 ctx.strokeStyle=color;
-ctx.lineWidth=2
-ctx.arc(200,200,40,0,2*Math.PI);
-ctx.stroke();
-canvas.addEventListener("mousedown",mymouse);
-function mymouse(e)
-{
-    color=document.getElementById("color").value;
-    mousex=e.clientX-canvas.offsetLeft;
-    mousey=e.clientY-canvas.offsetTop;
-    console.log("X="+mousex+",Y="+mousey);
-    circle(mousex,mousey);
-}
-function circle(mousex,mousey)
-{
-    ctx.beginPath();
-    ctx.strokeStyle=color;
-    ctx.lineWidth=2
-    ctx.arc(mousex,mousey,40,0,2*Math.PI);
-    ctx.stroke(); 
-}
-function cleararea()
-{
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-}
+ctx.lineWidth=10;
+ctx.arc(200, 200, 80 ,0 , 2*Math.PI); 
+ctx.stroke(); 
 
+color= "red";
+ctx.beginPath();
+ctx.strokeStyle=color;
+ctx.lineWidth=10;
+ctx.arc(300, 200, 80 ,0 , 2*Math.PI); 
+ctx.stroke(); 
+
+color= "yellow";
+ctx.beginPath();
+ctx.strokeStyle=color;
+ctx.lineWidth=10;
+ctx.arc(150, 300, 80 ,0 , 2*Math.PI); 
+ctx.stroke(); 
+
+color= "green";
+ctx.beginPath();
+ctx.strokeStyle=color;
+ctx.lineWidth=10;
+ctx.arc(250, 300, 80 ,0 , 2*Math.PI); 
+ctx.stroke(); 
