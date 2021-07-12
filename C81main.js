@@ -1,3 +1,5 @@
+canvas=document.getElementById("Mycanvas");
+ctx= canvas.getContext("2d");
 
 
 canvas=document.getElementById("canvas1");
