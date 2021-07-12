@@ -2,8 +2,7 @@ canvas=document.getElementById("Mycanvas");
 ctx= canvas.getContext("2d");
 
 
-canvas=document.getElementById("canvas1");
-ctx=canvas.getContext("2d");
+
 color= "blue";
 ctx.beginPath();
 ctx.strokeStyle=color;https://codepen.io/login
